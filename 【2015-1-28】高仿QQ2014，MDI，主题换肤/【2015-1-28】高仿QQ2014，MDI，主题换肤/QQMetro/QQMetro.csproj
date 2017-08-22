@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D383C480-31C3-4195-AC07-12EF4CD18801}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QQMetro</RootNamespace>
+    <AssemblyName>QQMetro</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>C:\Users\wen\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A34336B166E7E54D3F3AC077F06907A0C768A6D8</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>QQMetro_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSkin, Version=15.1.28.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Demo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Demo.Designer.cs">
+      <DependentUpon>Demo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMdi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMdi.Designer.cs">
+      <DependentUpon>FrmMdi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTheme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTheme.Designer.cs">
+      <DependentUpon>FrmTheme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYx.Designer.cs">
+      <DependentUpon>FrmYx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCountenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCountenance.Designer.cs">
+      <DependentUpon>FrmCountenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInformation.Designer.cs">
+      <DependentUpon>FrmInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQQChat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQQChat.Designer.cs">
+      <DependentUpon>FrmQQChat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWeather.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWeather.designer.cs">
+      <DependentUpon>FrmWeather.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWeatherFit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWeatherFit.designer.cs">
+      <DependentUpon>FrmWeatherFit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\FileHelper.cs" />
+    <Compile Include="Helpers\GlobalResourceManager.cs" />
+    <Compile Include="Helpers\Tools.cs" />
+    <Compile Include="LoginCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoginCode.Designer.cs">
+      <DependentUpon>LoginCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PwdErro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PwdErro.Designer.cs">
+      <DependentUpon>PwdErro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInformationForm.designer.cs">
+      <DependentUpon>UserInformationForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Demo.resx">
+      <DependentUpon>Demo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMdi.resx">
+      <DependentUpon>FrmMdi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTheme.resx">
+      <DependentUpon>FrmTheme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYx.resx">
+      <DependentUpon>FrmYx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCountenance.resx">
+      <DependentUpon>FrmCountenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInformation.resx">
+      <DependentUpon>FrmInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQQChat.resx">
+      <DependentUpon>FrmQQChat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWeather.resx">
+      <DependentUpon>FrmWeather.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWeatherFit.resx">
+      <DependentUpon>FrmWeatherFit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginCode.resx">
+      <DependentUpon>LoginCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PwdErro.resx">
+      <DependentUpon>PwdErro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInformationForm.resx">
+      <DependentUpon>UserInformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QQMetro_TemporaryKey.pfx" />
+    <None Include="Resources\afternoon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\morning.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\night.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Full_close_down.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Full_close_hover.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Full_close_normal.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_close_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_close_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_close_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackPalace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_btn_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_btn_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allbtn_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allbtn_highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\set_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sysbtn_max_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sysbtn_min_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sysbtn_min_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sysbtn_min_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sysbtn_restore_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sysbtn_restore_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sysbtn_restore_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aio_setting_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aio_setting_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aio_setting_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aio_setting_white_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aio_setting_white_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aio_setting_white_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sysbtn_close_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sysbtn_close_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sysbtn_close_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sysbtn_max_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sysbtn_max_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShadowPalace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aio_head_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_norml.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_Mouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackPalace1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

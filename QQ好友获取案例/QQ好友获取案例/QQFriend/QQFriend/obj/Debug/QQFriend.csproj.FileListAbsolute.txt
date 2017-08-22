@@ -1,0 +1,10 @@
+F:\2T96课程-作业\C#OOP\QQ好友获取案例\QQFriend\QQFriend\bin\Debug\QQFriend.exe
+F:\2T96课程-作业\C#OOP\QQ好友获取案例\QQFriend\QQFriend\bin\Debug\QQFriend.pdb
+F:\2T96课程-作业\C#OOP\QQ好友获取案例\QQFriend\QQFriend\obj\Debug\QQFriend.FrmLogin.resources
+F:\2T96课程-作业\C#OOP\QQ好友获取案例\QQFriend\QQFriend\obj\Debug\QQFriend.Properties.Resources.resources
+F:\2T96课程-作业\C#OOP\QQ好友获取案例\QQFriend\QQFriend\obj\Debug\QQFriend.csproj.GenerateResource.Cache
+F:\2T96课程-作业\C#OOP\QQ好友获取案例\QQFriend\QQFriend\obj\Debug\QQFriend.exe
+F:\2T96课程-作业\C#OOP\QQ好友获取案例\QQFriend\QQFriend\obj\Debug\QQFriend.pdb
+F:\2T96课程-作业\C#OOP\QQ好友获取案例\QQFriend\QQFriend\obj\Debug\QQFriend.FrmMain.resources
+F:\2T96课程-作业\C#OOP\QQ好友获取案例\QQFriend\QQFriend\obj\Debug\QQFriend.FrmLeft.resources
+F:\2T96课程-作业\C#OOP\QQ好友获取案例\QQFriend\QQFriend\bin\Debug\QQFriend.exe.config

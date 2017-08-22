@@ -1,0 +1,118 @@
+CSKIN-14.7.25
+1.修复SkinPanel滚动条不显示的问题。
+2.修复SkinPanel右下边框不显示的问题。
+3.修复好友列表头像闪烁的一些BUG。
+4.修复SkinMain异形窗体点击任务栏最小化操作。
+5.加入内置工具类FastBitmap,此类用来快速Bitmap读写像素，如何使用看：http://bbs.cskin.net/thread-83-1-1.html。
+6.修复截图控件的未选框双击错误BUG，增加截图控件属性BmpLayerCurrent：控件所截图的图片。
+7.SkinToolStrip添加BaseItemNorml属性，BaseItem默认背景图。
+8.修复SkinComboBox下拉框项的细节样式。
+9.加入SkinFileTansfersContainer控件与SkinFileTransfersItem控件。
+   SkinFileTansfersContainer：文件传输列表容器，这里面内置Add,Remove,Search等操作ItemList方法。
+   SkinFileTransfersItem：文件传输列表项，用于添加进列表容器。
+10.SkinToolStrip控件添加BindTabControl=(绑定要操作的TabControl)属性，绑定后点击ToolStripButton就可以根据ToolStripButton中的Tag=(TabPage的Index值)进行切换TabPage。
+11.优化设计时SkinTabControl略卡的问题。
+12.SkinTabePage添加属性（BorderColor：边框颜色）。
+13.修复好友列表闪烁状态下好友被删除，分组依然闪烁。
+14.SkinButton、SkinCheckBox、SkinRadioButton添加属性（IsEnabledDraw：是否画禁用状态下的效果，默认true）。
+15.好友列表添加三个事件：
+   （DownSubItem：用鼠标按下子项时发生）
+   （UpSubItem：用鼠标按下并释放子项时发生）
+   （ClickSubItem：用鼠标单击子项时发生）
+16.SkinTabControl添加两个事件：
+   （TabePageClosed：TabPage容器关闭后。）
+   （TabePageClosing：TabPage容器关闭前。）
+17.加入彗星小助手案例DEMO（不带Html编辑器版本CSkin.dll）。
+18.由于部分免费用户无法加入工具箱，经检测是里面的一个Html编辑器控件不兼容的问题，在问题兼容之前，现在分发两个版本（一个：带Html编辑器版本 一个：不带Html编辑器版本）。
+
+CSKIN-14.7.2
+1.SkinTabControl添加动画时间控制属性 - Interval:帧之间时间间隔。
+2.添加SkinSplitContainer拆分器控件。
+3.解决窗体BorderColor设置颜色后，背景色异常问题。
+4.修复SkinProgressBar的进度条高度像素多出的问题。
+5.优化了阴影与边框细节上的问题。
+6.修复SkinPanel圆角异常问题。
+7.加入Office风格控件。
+8.窗体加入了MobileApi属性，指示窗体是调用API移动窗体还是代码模拟移动窗体(1.Api移动窗体弊端：控件过多，移动会卡。利：win7以下系统有摇晃窗体最小化其他程序的功能，就是与原生窗体无差别的效果)
+9.窗体加入了ICoOffset属性，ICO图标偏移属性。
+10.内置Metro模板，Form直接继承Skin_Metro即可实现Win8风格窗体。
+11.加入SkinListView控件。
+12.以下控件加入了滚动条美化：
+   SkinTreeView,SkinChatRichTextBox，
+   SkinWaterTextBox，SkinListBox
+   SkinAlphaWaterTextBox，SkinTextBox
+   SkinListView
+13.SkinTabControl加入ImgTxtOffset属性，Page图标与文本整体偏移微调节的一个属性。
+14.chatListBox好友列表控件加入属性：FriendsMobile,用来控制好友是否可拖动改变分组。
+15.修复SkinTabControl,Tabpage标签中关闭按钮关闭不了的Bug，解决，悬浮至Tabpeg关闭按钮无悬浮效果的Bug。
+16.修复若干细节。
+
+CSKIN-14.4.13
+1.优化SkinTabControl与好友列表的内存占用问题。
+2.内置Mac模板样式，Form直接继承Skin_Mac即可实现Mac风格窗体。
+3.窗体添加TitleCenter属性，表示标题是否居中。
+4.添加SkinAnimator动画组件使用案例DEMO
+5.若干细节优化。
+
+CC2014-3.12
+1.添加SkinChatRichTextBox控件，增加对gif的支持，可编码传送。
+
+CC2014-2.6
+1.修复拖动好友出现的负值BUG和拖动后有机率会消失的问题。
+2.好友列表DoubleClickSubItem事件添加回调参数MouseEventArgs，用于判断鼠标操作的一些参数，如：左键双击还是右键双击判断。
+3.对SkinDataGridView属性进行部分重构，颜色美化属性增加。
+4.窗体加入绘制模式边框颜色属性BorderColor和InnerBorderColor
+5.解决SkinTabControl left和right绘制模式下tab标签悬浮样式不变化问题。
+6.所有控件采用最高质量模式绘制文字，防止字体模糊以及锯齿。
+7.解决SkinDataGridView的CellDoubleClick事件在不可编辑状态下双击不触发事件。
+
+CC2013-12.8
+1.优化SkinTabControl的效率，不再呢么闪烁，360DEMO直接替换DLL，改部分属性小错误，就可以看到明显闪烁减少效果。
+2.为SkinStrip分类的控件添加 是否统一变换字体颜色的属性。
+3.为SkinAnimatorImg动画图片框控件添加Stretch属性，是否拉伸模式绘制动画。
+4.修复SkinComboBox无法DataSource绑定项的BUG。
+5.增加音乐播放器，萝莉人物窗体，等DEMO。
+6.修复部分细节bug。
+提示：窗体继承SkinMain,再设置下SkinBack,有你想不到的惊喜哦，此窗体是用于绘制异形窗体专用，你给他什么图片，窗体就会按照图片来绘制。有一个缺点就是，有透明像素的背景区域，控件不给于显示。
+
+CC2013-10.30
+1.由于SkinForm名字太多人使用，界面库命名正式改为CSkin.dll，官网www.cskin.net。
+2.SkinTabControl标签中添加菜单箭头，可点击展开菜单。
+3.SkinTabControl添加标签关闭按钮。
+4.修复部分中文乱码问题。
+5.优化好友列表右键菜单。
+6.将窗体自定义系统按钮改为集合模式，可添加无数个自定义系统按钮。自定义系统按钮事件中可以 e.参数 来判断。
+7.增加360安全卫士-DEMO案例。
+8.增加SkinAnimatorImg控件，用于支持位图动画的播放。如360的动态logo。
+9.各种细节BUG优化。
+
+CC2013-10.11
+1.添加SkinTabControlEx,加入更加自定义的美化属性和动画效果。
+2.添加SkinAnimator,通用动画控件。
+3.添加Html编辑器控件
+4.修复SkinButton图标和文本相对位置的BUG
+
+CC2013-9.26
+1.优化好友列表CPU占用
+2.好友列表加入好友登录平台属性：安卓 苹果 WEBQQ PC
+3.优化标题绘制模式，新添标题绘制模式属性。
+4.新添标题偏移度属性。
+5.加入圆形进度条控件：ProgressIndicator。
+
+CC2013-9.5.2
+1.优化截图控件，截图工具栏加入新功能。
+2.解决个人信息卡和天气窗体显示后不会消失的问题。
+3.各种细节BUG优化。
+
+CC2013-9.5.1
+1.解决贴边左右隐藏的BUG。
+2.解决窗体点击事件不能触发的问题。
+3.优化SkinButton继承父容器背景色的代码。
+4.解决SkinButton异常错误。
+
+CC2013-9.3
+1.好友列表右键菜单没反应问题。
+2.新增美化控件SkinDatagridview。
+3.密码软件盘回删不了文字问题。
+4.双击窗体最大化，最大化后再双击恢复原大小，（win7）。
+5.部分细节调优。

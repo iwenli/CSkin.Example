@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9CBF69D8-C61C-41DD-B58C-637CED278A35}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HuiXing</RootNamespace>
+    <AssemblyName>HuiXing</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSkin, Version=14.7.2.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTest.Designer.cs">
+      <DependentUpon>FrmTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBbx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBbx.Designer.cs">
+      <DependentUpon>FrmBbx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExeManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExeManager.Designer.cs">
+      <DependentUpon>FrmExeManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFileUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFileUp.designer.cs">
+      <DependentUpon>FrmFileUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrcColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrcColor.Designer.cs">
+      <DependentUpon>FrmPrcColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrcImg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrcImg.Designer.cs">
+      <DependentUpon>FrmPrcImg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReg.Designer.cs">
+      <DependentUpon>FrmReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmScSo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmScSo.Designer.cs">
+      <DependentUpon>FrmScSo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSpy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSpy.Designer.cs">
+      <DependentUpon>FrmSpy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWebSpy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWebSpy.Designer.cs">
+      <DependentUpon>FrmWebSpy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageObject.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmTest.resx">
+      <DependentUpon>FrmTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBbx.resx">
+      <DependentUpon>FrmBbx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExeManager.resx">
+      <DependentUpon>FrmExeManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFileUp.resx">
+      <DependentUpon>FrmFileUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrcColor.resx">
+      <DependentUpon>FrmPrcColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrcImg.resx">
+      <DependentUpon>FrmPrcImg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReg.resx">
+      <DependentUpon>FrmReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmScSo.resx">
+      <DependentUpon>FrmScSo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSpy.resx">
+      <DependentUpon>FrmSpy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWebSpy.resx">
+      <DependentUpon>FrmWebSpy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaiduShurufa_2014-8-2_16-32-58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Skin\00001[800x90x24BPP].jpg" />
+    <EmbeddedResource Include="Skin\1.jpg" />
+    <EmbeddedResource Include="Skin\2.jpg" />
+    <EmbeddedResource Include="Skin\3.jpg" />
+    <EmbeddedResource Include="Skin\4.jpg" />
+    <EmbeddedResource Include="Skin\5.jpg" />
+    <EmbeddedResource Include="Skin\6.jpg" />
+    <EmbeddedResource Include="Skin\7.jpg" />
+    <EmbeddedResource Include="Skin\8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgPer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgNorml.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgBai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\156.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\142.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\171.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgXz.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\154.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\141.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

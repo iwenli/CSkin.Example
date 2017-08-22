@@ -1,0 +1,7 @@
+DSkin新版界面库马上出炉啦！尽请关注bbs.cskin.net论坛。
+
+CSkin的下一款产品？DSkin！没看错！C#-DUI的变异。
+
+关于DSkin
+
+DSkin界面库官网 -- www.dskin.cn 创建于2015年。Winform平台首个DirectUI界面库，无句柄控件，炫丽动画效果，任意控件透明，毛玻璃窗体，主题换肤。我们保证DSkin界面库不闪烁，不卡顿，低消耗。给你带来C++的效率，winform的快速开发体验，wpf的界面效果。
